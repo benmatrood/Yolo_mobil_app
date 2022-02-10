@@ -6,7 +6,7 @@ import spacy
 nlp = spacy.load("fr_core_news_md")
 
 
-#
+#Fonction de tokenisation
 def cleanToken(sentences):
     # Tokeniser la phrase en mettant les mots en miniscule
     doc = nlp(sentences.lower())
@@ -17,9 +17,9 @@ def cleanToken(sentences):
     return ' '.join(words)
 
 
-# Fonction de selection de mot clé
 def check_key_word(sentence):
     """
+    Fonction qui récupère le mot clé et montant
     :param sentence:
     :type sentence: str
     :return: intension
@@ -40,7 +40,6 @@ def check_key_word(sentence):
 
     words = sentence.split()  # Variable qui découpe la phrase
     for key, word in key_words.items():
-        print(f"key:{key} word:{word}")
         if type(word) is list:
             for mot in word:
                 if mot in words:
@@ -57,7 +56,6 @@ if __name__ == "__main__":
     sms_sentence = "je veux souscrire à un message de 200"
     cal_sentence = "souscription de pass appel de 300"
 
-    sentence = cleanToken(cal_sentence)  # Traitement de la
-    print(sentence)
+    sentence = cleanToken(cal_sentence)  #Traitement de la phrase à travers la fonction
     p, montant = check_key_word(sentence)
     print(f"intension: {p}, montant:{montant}")
