@@ -11,7 +11,8 @@ def cleanToken(sentences):
     # Tokeniser la phrase en mettant les mots en miniscule
     doc = nlp(sentences.lower())
 
-    # On garde le token s'il ne fait pas partir des stop_words
+    # On garde le token s'il ne fait pas partir des stop_words ni des signes
+    # de ponctuation et on le lematise
     words = [token.lemma_ for token in doc if token.is_stop is not True and token.is_punct is not True]
     return ' '.join(words)
 
@@ -50,12 +51,13 @@ def check_key_word(sentence):
     return intension, montant
 
 
-# Créé en traitant une chaine de caractères avec l'objet nlp
-internet_sentence = "Je veux forfait de 500"
-sms_sentence = "je veux souscrire à un message de 200"
-cal_sentence = "souscription de pass appel de 300"
+if __name__ == "__main__":
+    # Créé en traitant une chaine de caractères avec l'objet nlp
+    internet_sentence = "Je veux forfait de 500"
+    sms_sentence = "je veux souscrire à un message de 200"
+    cal_sentence = "souscription de pass appel de 300"
 
-sentence = cleanToken(cal_sentence)  # Traitement de la
-print(sentence)
-p, montant = check_key_word(sentence)
-print(f"intension: {p}, montant:{montant}")
+    sentence = cleanToken(cal_sentence)  # Traitement de la
+    print(sentence)
+    p, montant = check_key_word(sentence)
+    print(f"intension: {p}, montant:{montant}")
