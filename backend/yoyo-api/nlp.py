@@ -7,7 +7,7 @@ nlp = spacy.load("fr_core_news_md")
 
 class Model:
     def __init__(self):
-        self.intent = None
+        self.intent = 'appel'
         self.amount = None
 
     def cleanToken(self, sentences: str):
