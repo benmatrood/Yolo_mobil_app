@@ -1,4 +1,5 @@
 # git push https://github.com/benmatrood/Yolo_mobil_app.git dev
+# uvicorn main:app --reload
 # Test your FastAPI endpoints
 
 GET http://127.0.0.1:8000/
