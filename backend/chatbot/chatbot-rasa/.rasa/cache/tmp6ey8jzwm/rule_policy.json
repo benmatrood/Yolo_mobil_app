@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"MTN_play\"}}]": "utter_MTN_play",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"MTN_play\"}}, {\"prev_action\": {\"action_name\": \"utter_MTN_play\"}, \"user\": {\"intent\": \"MTN_play\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Astuces\"}}]": "utter_Astuces",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Astuces\"}}, {\"prev_action\": {\"action_name\": \"utter_Astuces\"}, \"user\": {\"intent\": \"Astuces\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Country_momo\"}}]": "utter_Country_momo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Country_momo\"}}, {\"prev_action\": {\"action_name\": \"utter_Country_momo\"}, \"user\": {\"intent\": \"Country_momo\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Shop\"}}]": "utter_Shop",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Shop\"}}, {\"prev_action\": {\"action_name\": \"utter_Shop\"}, \"user\": {\"intent\": \"Shop\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Bot_challenge\"}}]": "utter_Bot_challenge",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_Bot_challenge\"}, \"user\": {\"intent\": \"Bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Bye\"}}]": "utter_Bye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Bye\"}}, {\"prev_action\": {\"action_name\": \"utter_Bye\"}, \"user\": {\"intent\": \"Bye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Def_momo\"}}]": "utter_Def_momo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Def_momo\"}}, {\"prev_action\": {\"action_name\": \"utter_Def_momo\"}, \"user\": {\"intent\": \"Def_momo\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fell\"}}]": "utter_Fell",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fell\"}}, {\"prev_action\": {\"action_name\": \"utter_Fell\"}, \"user\": {\"intent\": \"Fell\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Internet\"}}]": "utter_Internet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Internet\"}}, {\"prev_action\": {\"action_name\": \"utter_Internet\"}, \"user\": {\"intent\": \"Internet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Hello\"}}]": "utter_Hello",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Hello\"}}, {\"prev_action\": {\"action_name\": \"utter_Hello\"}, \"user\": {\"intent\": \"Hello\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Syntax_momo\"}}]": "utter_Syntax_momo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Syntax_momo\"}}, {\"prev_action\": {\"action_name\": \"utter_Syntax_momo\"}, \"user\": {\"intent\": \"Syntax_momo\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Back_fell\"}}]": "utter_Back_fell",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Back_fell\"}}, {\"prev_action\": {\"action_name\": \"utter_Back_fell\"}, \"user\": {\"intent\": \"Back_fell\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fell\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Def_momo\"}}, {\"prev_action\": {\"action_name\": \"utter_Def_momo\"}, \"user\": {\"intent\": \"Def_momo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Fell\"}}, {\"prev_action\": {\"action_name\": \"utter_Fell\"}, \"user\": {\"intent\": \"Fell\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Country_momo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Syntax_momo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Back_fell\"}}, {\"prev_action\": {\"action_name\": \"utter_Back_fell\"}, \"user\": {\"intent\": \"Back_fell\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Bye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Def_momo\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Country_momo\"}}, {\"prev_action\": {\"action_name\": \"utter_Country_momo\"}, \"user\": {\"intent\": \"Country_momo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Syntax_momo\"}}, {\"prev_action\": {\"action_name\": \"utter_Syntax_momo\"}, \"user\": {\"intent\": \"Syntax_momo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Bye\"}}, {\"prev_action\": {\"action_name\": \"utter_Bye\"}, \"user\": {\"intent\": \"Bye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Back_fell\"}}]"
+    ]
+  }
+}

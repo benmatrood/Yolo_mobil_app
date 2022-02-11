@@ -7,8 +7,10 @@ Chat boot et application de commande vocal
     La fonction yoyo de l'Api prends le montant et le service et retourne la syntaxe de souscription.
     
     #### Installation
-     - Créer un environnement virtuel avec python 3.8;
+     - Installer python 3.8 ( https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe) et ajouter python au PATH;
+     - Créer un environnement virtuel avec ***py -3.8 -m venv venv***
      - Installer le requirements.txt avec ***pip install -r requirements.txt***
+     - Si le fr-core-news-md ne s'installe pas, faire ***python -m spacy download fr-core-news-md***
      
 2. Modèle de traitement de la phrase
 
@@ -22,7 +24,7 @@ Chat boot et application de commande vocal
 
     #### Installation
      - Installer le requirements.txt avec ***pip install -r requirements.txt***
-     - Exécuter le code ***model.py***
+     - Exécuter le code ***nlp.py***
 
 
 

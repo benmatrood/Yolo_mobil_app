@@ -1,0 +1,24 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Internet\"}}]": "utter_Internet",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Internet\"}}, {\"prev_action\": {\"action_name\": \"utter_Internet\"}, \"user\": {\"intent\": \"Internet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"MTN_play\"}}]": "utter_MTN_play",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"MTN_play\"}}, {\"prev_action\": {\"action_name\": \"utter_MTN_play\"}, \"user\": {\"intent\": \"MTN_play\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Astuces\"}}]": "utter_Astuces",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Astuces\"}}, {\"prev_action\": {\"action_name\": \"utter_Astuces\"}, \"user\": {\"intent\": \"Astuces\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Salutation\"}}]": "utter_Salutation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Salutation\"}}, {\"prev_action\": {\"action_name\": \"utter_Salutation\"}, \"user\": {\"intent\": \"Salutation\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Boutique\"}}]": "utter_Boutique",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"Boutique\"}}, {\"prev_action\": {\"action_name\": \"utter_Boutique\"}, \"user\": {\"intent\": \"Boutique\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start"
+    ]
+  }
+}

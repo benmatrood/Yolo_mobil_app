@@ -1,0 +1,63 @@
+version: "3.0"
+
+rules:
+
+ - rule: Hello
+   steps:
+   - intent: Hello
+   - action: utter_Hello
+  
+ - rule: MTN_play
+   steps:
+   - intent: MTN_play
+   - action: utter_MTN_play
+
+ - rule: Fell
+   steps:
+   - intent: Fell
+   - action: utter_Fell
+
+ - rule: Back_fell
+   steps:
+   - intent: Back_fell
+   - action: utter_Back_fell
+ 
+ - rule: Internet
+   steps:
+   - intent: Internet
+   - action: utter_Internet
+   
+ - rule: Shop
+   steps:
+   - intent: Shop
+   - action: utter_Shop
+
+ - rule: Bye
+   steps:
+   - intent: Bye
+   - action: utter_Bye
+ 
+ - rule: Astuces
+   steps:
+   - intent: Astuces
+   - action: utter_Astuces
+
+ - rule: Bot_challenge
+   steps:
+   - intent: Bot_challenge
+   - action: utter_Bot_challenge
+
+ - rule: Def_momo
+   steps:
+   - intent: Def_momo
+   - action: utter_Def_momo
+
+ - rule: Syntax_momo
+   steps:
+   - intent: Syntax_momo
+   - action: utter_Syntax_momo
+
+ - rule: Country_momo
+   steps:
+   - intent: Country_momo
+   - action: utter_Country_momo

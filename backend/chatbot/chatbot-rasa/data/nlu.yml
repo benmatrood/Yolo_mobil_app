@@ -1,0 +1,106 @@
+version: "3.0"
+
+nlu:
+- intent: Hello
+  examples: |
+    - bonjour
+    - coucou!
+    - salut
+    - bonne journée
+    - cc
+    - bonsoir
+    - hi
+
+- intent: Fell
+  examples: |
+    - Comment tu vas?
+    - ça va?
+    - Comment vous allez?
+    - On dit quoi?
+
+- intent: Back_fell
+  examples: |
+    - je vais bien
+    - ça va
+    - je vais bien, j'ai une question
+    - je vais bien, j'ai une preocupation
+
+
+- intent: Name
+  examples: |
+    - Quel est ton prénom?
+    - Qui es tu?
+    - Comment t'appelles tu?
+    - Quel est ton nom?
+
+- intent: MTN_play 
+  examples: |
+    - Qu'est ce qu'un service MTN Play?
+    - C'est quoi un service MTN Play? 
+    - Quels sont les exemples de services MTN Play?
+    - Comment acceder à un service MTN Play?
+
+- intent: Internet
+  examples: |
+    - Comment souscrire à internet?
+    - Quels sont les différents packs internet?
+    - Comment souscrire à internet pour un tiers?
+    - Comment souscrire à internet pour quelqu'un?
+
+- intent: Astuces 
+  examples: |
+    - Astuces pour faire le plein de bonus avec les packs internet de MTN?
+    - Les jours de bonus
+    - Les différents jours de bonus
+    - Les bonus du jour
+    - Quel bonus y'a t-il aujourd'hui?
+    - comment se faire des bonus?
+
+- intent: Shop
+  examples: |
+    - 'Où puis-je acheter en ligne ?'
+    - 'Où puis-je trouver vos produits?'
+    - 'Où puis-je acheter une box?'
+    - Où puis-je trouver des téléphones MTN?
+
+- intent: Bye
+  examples: |
+    - Au revoir
+    - à plus tart
+    - à plus
+    - j'ai fini
+    - 'A bientôt'
+    - 'bye'
+
+- intent: Bot_challenge
+  examples: |
+    - tu es un robot?
+    - tu es un  humain?
+    - vous êtes un robot?
+    - vous êtes un  humain?
+    - suis-je en train de parler avec un robot?
+    - je parle avec qui?
+    - ton nom
+    - quel est ton nom
+    - suis-je en train de parler avec un homme?
+
+- intent: Def_momo
+  examples: |
+    - c'est quoi momo?
+    - qu'est que MTN mobile money?
+    - Que veux dire Momo?
+
+- intent: Syntax_momo
+  examples: |
+    - comment puis-je acceder à momo?
+    - quelle est la syntaxe de momo?
+    - comment effectuer une transaction momo?
+    
+- intent: Country_momo
+  examples: |
+    - où puis-je tranferer de l'argent?
+    - quels sont les pays accessible à momo?
+    - Dans quel pays y'a t'il momo?
+
+
+    
