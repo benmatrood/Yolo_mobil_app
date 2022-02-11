@@ -15,3 +15,16 @@ GET http://127.0.0.1:8000/yoyo/{{service}}
 Accept: application/json
 
 ###
+### Request Example
+# curl -X 'POST'
+#  'http://127.0.0.1:800/yoyo/'
+#  -H 'accept: application/json'
+#  -H 'Content-Type: application/json'
+#  -d '{
+#  "texts": "souscription de pass appel de 300"
+#}'
+
+
+###
+
+

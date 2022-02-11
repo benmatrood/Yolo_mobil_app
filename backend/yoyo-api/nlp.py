@@ -32,9 +32,8 @@ class Model:
         Fonction qui extraire le mot clé et montant de la phrase de l'utilisateur
         :param sentence:
         :type sentence: str
-        :return: intension
-        :return: amount
-        :rtype: str
+        :return: forfait
+        :rtype: dict
         """
 
         key_words = {
@@ -56,7 +55,10 @@ class Model:
             for mot in word:
                 if mot in words:
                     self.intent = key
-        return self.intent, self.amount
+        return {
+            "name": self.intent,
+            "amount": self.amount
+        }
 
 
 if __name__ == "__main__":
@@ -67,6 +69,6 @@ if __name__ == "__main__":
 
     model = Model()
     sentence = model.cleanToken(sms_sentence)
-    p, montant = model.checkKeyWord(sentence)
+    forfait = model.checkKeyWord(sentence)
 
-    print(f"intension:{p}, montant:{montant}")
+    print(f"intension:{forfait['name']}, montant:{forfait['amount']}")
