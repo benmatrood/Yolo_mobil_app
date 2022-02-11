@@ -1,0 +1,75 @@
+version: "3.0"
+
+stories:
+
+- story: sad path 0 
+  steps:
+  - intent: Hello
+  - action: utter_Hello
+  - intent: Name
+  - action: utter_Name
+
+- story: sad path 1
+  steps:
+  - intent: Hello
+  - action: utter_Hello
+  - intent: Name
+  - action: utter_Name
+  - intent: MTN_play
+  - action: utter_MTN_play
+
+- story: sad path 2
+  steps:
+  - intent: Hello
+  - action: utter_Hello
+  - intent: Name 
+  - action: utter_Name
+  - intent: MTN_play
+  - action: utter_MTN_play
+  - intent: Internet
+  - action: utter_Internet
+
+- story: sad path 3
+  steps:
+  - intent: Hello
+  - action: utter_Hello
+  - intent: Name
+  - action: utter_Name
+  - intent: MTN_play
+  - action: utter_MTN_play
+  - intent: Internet
+  - action: utter_Internet
+  - intent: Astuces
+  - action: utter_Astuces
+
+- story: sad path 4
+  steps:
+  - intent: Hello
+  - action: utter_Hello
+  - intent: Name
+  - action: utter_Name
+  - intent: MTN_play
+  - action: utter_MTN_play
+  - intent: Internet
+  - action: utter_Internet
+  - intent: Astuces
+  - action: utter_Astuces
+  - intent: Shop
+  - action: utter_Shop
+
+- story: sad path 5
+  steps:
+  - intent: Hello
+  - action: utter_Hello
+  - intent: Name
+  - action: utter_Name
+  - intent: MTN_play
+  - action: utter_MTN_play
+  - intent: Internet
+  - action: utter_Internet
+  - intent: Astuces
+  - action: utter_Astuces
+  - intent: Shop
+  - action: utter_Shop
+  - intent: Bot_challenge
+  - action: utter_Bot_challenge

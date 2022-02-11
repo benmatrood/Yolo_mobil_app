@@ -1,0 +1,106 @@
+version: "3.0"
+
+intents:
+  - Hello
+  - Fell
+  - Back_fell
+  - Name
+  - MTN_play
+  - Internet
+  - Astuces
+  - Shop
+  - Bot_challenge
+
+responses:
+  utter_Hello:
+  - text: |
+      Salut, bienvenue!
+  - text: |
+      Bonjour
+  - text: |
+      Hello, j'espère que vous allez bien.
+  - text: |
+      Salut, comment puis-je vous aider?
+
+  utter_Fell:
+  - text: |
+      Bien merci et vous?
+  - text: |
+      Je vais bien et vous?
+  - text: |
+      ça va, et vous?
+  - text: |
+      Je vais super bien et vous?
+
+  utter_Back_fell:
+  - text: |
+      Super, comment puis-je vous aider?
+  - text: |
+      Ok, quelle est votre préocupation?
+  - text: |
+      Super, quelle est votre préocupation?
+
+
+  utter_Name:
+  - text: |
+      Je m'appelle Yoyo
+  - text: |
+      Je suis Yoyo
+  - text: |
+      mon nom c'est Yoyo
+  - text: |
+      Moi c'est Yoyo
+
+  utter_Bye:
+  - text: |
+      De rien, à bientôt
+  - text: |
+      bye bye
+  - text: |
+      si vous n'avez plus de preocupation, aurevoir
+
+  utter_MTN_play:
+  - text: |
+      Un service MTN PlayPlus est un produit et/ou service à valeur ajoutée allant au-delà des communications standard telles que les appels téléphoniques etc.
+  - text: |
+      Des exemples de services MTN Play incluent :Xtra-Time -MTN-Zik MTN-Sauvegarde etc…
+  - text: |
+      Les services MTN Play sont accessibles via les canaux suivants :SMS, Internet, Assistance vocale, Menu USSD via la commande *105*9#
+
+  utter_Internet:
+  - text: |
+      souscrivez à internet via la syntaxte *105*2# et accedez aux options pour souscrire pour vous ou pour un tier
+
+  utter_Astuces:
+  - text: |
+      Avec les Packs Internet de MTN une fois que vous y souscrivez via *105*2# vous bénéficiez systématiquement de bonus tous les jours de la semaine.
+  - text: |
+      Tous les Lundi, Mardi, jeudi, Vendredi et samedi. Bonus allant de 50 à 150% via *105*2#. Les Mercredi et Dimanche Bonus Habituels Doublés si tu recevais 100% les autres jours, tu recevras alors 200%. Profite pour faire le plein avec ce calendrier.
+
+
+  utter_Shop:
+  - text: |
+      Cliquez sur ce lien https://mtn.jumia.ci/
+
+  utter_Bot_challenge:
+  - text: |
+      Je suis votre assistant virtuel (bot) qui est là pour vous servir.
+
+  utter_Def_momo:
+  - text: |
+      Momo désigne MObile MOney, c'est le service de transfert d'argent de MTN en Côte d'Ivoire
+  - text: |
+      Momo désigne MTN MObile MOney, c'est le service finacier mobile mobile qui permet de gérer facilement vos transactions finacières à partir de votre téléphone mobile.
+
+
+  utter_Syntax_momo:
+  - text: |
+      Pour acceder à MOMO taper *133# puis ok
+
+  utter_Country_momo:
+  - text: |
+      MTN MObile MOney est disponible dans les pays suivants: Benin, Côte d'Ivoire, Ghana, Libéria, Rwanda, Zambie, Ouganda, République de Guinée.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
