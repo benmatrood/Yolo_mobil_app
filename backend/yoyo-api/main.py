@@ -44,8 +44,10 @@ async def yoyo(sentence: SentenceModel):
     model = nlp.Model()
     clean_sentence = model.cleanToken(sentence.texts)
     forfait = model.checkKeyWord(clean_sentence)
-    syntaxe = checkSyntax(service=forfait["name"], amount=forfait["amount"])
-
+    try:
+        syntaxe = checkSyntax(service=forfait["name"], amount=forfait["amount"])
+    except:
+        syntaxe = None
     return {"syntaxe": syntaxe}
 
 
