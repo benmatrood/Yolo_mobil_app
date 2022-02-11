@@ -34,9 +34,10 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.post("/yoyo/")
+@app.get("/yoyo/")
 async def yoyo(sentence: str):
     # ?service=sms&montant=150
+    print(sentence)
     model = nlp.Model()
     clean_sentence = model.cleanToken(sentence)
     forfait = model.checkKeyWord(clean_sentence)
@@ -47,5 +48,5 @@ async def yoyo(sentence: str):
     return {"syntaxe": syntaxe}
 
 
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="127.0.0.1", port=800)
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=800)
