@@ -26,10 +26,6 @@ def checkSyntax(service: str, amount: str):
     return syntaxe
 
 
-class SentenceModel(BaseModel):
-    texts: str
-
-
 app = FastAPI(title="YOYO-API")
 
 
@@ -39,10 +35,10 @@ async def root():
 
 
 @app.post("/yoyo/")
-async def yoyo(sentence: SentenceModel):
+async def yoyo(sentence: str):
     # ?service=sms&montant=150
     model = nlp.Model()
-    clean_sentence = model.cleanToken(sentence.texts)
+    clean_sentence = model.cleanToken(sentence)
     forfait = model.checkKeyWord(clean_sentence)
     try:
         syntaxe = checkSyntax(service=forfait["name"], amount=forfait["amount"])
